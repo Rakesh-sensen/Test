@@ -1,6 +1,5 @@
 import streamlit as st
 import pandas as pd
-import seaborn as sns
 import numpy as np
 import datetime as dt
 from PIL import Image
@@ -90,8 +89,6 @@ with st.expander("Data as per the Test Date"):
 st.header('Data Analysis On Number Of Resources per Project')
 st.write("""* **X-axis :** Number Of Employees
 * **Y-axis :** Name Of Projects""")
-fig=sns.countplot(x='Projects',data=df)
-st.pyplot()
 
 
 
